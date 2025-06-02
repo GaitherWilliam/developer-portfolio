@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero = () => {
     return (
@@ -25,23 +26,12 @@ const Hero = () => {
                     <p className="mt-4 text-lg text-[var(--fg)] opacity-80 max-w-xl">
                         I build developer tools, infrastructure, and AI-powered systems. I also bake a mean sourdough.
                     </p>
-                    <a
+                    <Link
                         href="/projects"
-                        className="mt-8 inline-block rounded-full px-6 py-3 text-lg font-semibold transition-colors duration-300"
-                        style={{
-                            backgroundColor: 'var(--primary)',
-                            color: '#fff',
-                        }}
-                        onMouseEnter={(e) => {
-                            (e.currentTarget as HTMLAnchorElement).style.backgroundColor = 'var(--secondary)';
-                        }}
-                        onMouseLeave={(e) => {
-                            (e.currentTarget as HTMLAnchorElement).style.backgroundColor = 'var(--primary)';
-                        }}
+                        className="mt-8 inline-block rounded-full px-6 py-3 text-lg font-semibold transition-colors duration-300 bg-[var(--primary)] text-white hover:bg-[var(--secondary)]"
                     >
                         View My Work
-                    </a>
-
+                    </Link>
                 </motion.div>
 
                 {/* Right: Collage */}

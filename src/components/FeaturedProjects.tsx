@@ -1,3 +1,6 @@
+'use client';
+
+import Link from 'next/link';
 import ProjectCard from './ProjectCard';
 
 const projects = [
@@ -37,12 +40,12 @@ const FeaturedProjects = () => (
             </div>
 
             <div className="text-center mt-10">
-                <a
+                <Link
                     href="/projects"
-                    className="inline-block text-[var(--primary)] hover:underline text-lg font-medium transition"
+                    className="inline-block text-[var(--primary)] hover:text-[var(--secondary)] underline-offset-2 hover:underline text-lg font-medium transition-colors"
                 >
                     View All Projects →
-                </a>
+                </Link>
             </div>
         </div>
     </section>
