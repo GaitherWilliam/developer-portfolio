@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #ecfdf5;             /* Softer mint */
+  --fg: #0f172a;             /* Dark slate (stronger contrast) */
+  --primary: #0ea5e9;        /* Sky-500 */
+  --secondary: #059669;      /* Emerald-600 */
+  --muted: #94a3b8;          /* Slate-400 */
+  --highlight: #d1fae5;      /* Emerald-100 */
+  --card-bg: #ffffff; /* light mode card background */
+}
+
+[data-theme='dark'] {
+  --bg: #022c22;
+  --fg: #d1fae5;
+  --primary: #38bdf8;
+  --secondary: #6ee7b7;
+  --muted: #cbd5e1; /* ← much lighter now */
+  --highlight: #0d9488;
+  --card-bg: #0f172a; /* Tailwind slate-900 or similar */
+}
+
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

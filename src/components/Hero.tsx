@@ -1,0 +1,77 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+
+const Hero = () => {
+    return (
+        <section
+            className="py-20 px-6"
+            style={{
+                background: 'linear-gradient(to bottom right, var(--highlight), var(--bg))',
+            }}
+        >
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                {/* Left: Intro Text */}
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="text-center md:text-left flex-1"
+                >
+                    <h1 className="text-5xl font-extrabold tracking-tight text-[var(--fg)]">
+                        Hey, I’m Will 👋
+                    </h1>
+                    <p className="mt-4 text-lg text-[var(--fg)] opacity-80 max-w-xl">
+                        I build developer tools, infrastructure, and AI-powered systems. I also bake a mean sourdough.
+                    </p>
+                    <a
+                        href="/projects"
+                        className="mt-8 inline-block rounded-full px-6 py-3 text-lg font-semibold transition-colors duration-300"
+                        style={{
+                            backgroundColor: 'var(--primary)',
+                            color: '#fff',
+                        }}
+                        onMouseEnter={(e) => {
+                            (e.currentTarget as HTMLAnchorElement).style.backgroundColor = 'var(--secondary)';
+                        }}
+                        onMouseLeave={(e) => {
+                            (e.currentTarget as HTMLAnchorElement).style.backgroundColor = 'var(--primary)';
+                        }}
+                    >
+                        View My Work
+                    </a>
+
+                </motion.div>
+
+                {/* Right: Collage */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="grid grid-cols-2 grid-rows-2 gap-4 w-full max-w-md"
+                >
+                    {[
+                        { src: 'https://picsum.photos/seed/headshot/300/300', alt: 'Headshot' },
+                        { src: 'https://picsum.photos/seed/project1/300/300', alt: 'Work' },
+                        { src: 'https://picsum.photos/seed/baking/300/300', alt: 'Baking' },
+                        { src: 'https://picsum.photos/seed/hobby/300/300', alt: 'Hobby' },
+                    ].map((img) => (
+                        <div key={img.alt} className="relative overflow-hidden rounded-xl shadow-md aspect-square">
+                            <Image
+                                src={img.src}
+                                alt={img.alt}
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 50vw, 25vw"
+                                priority
+                            />
+                        </div>
+                    ))}
+                </motion.div>
+            </div>
+        </section>
+    );
+};
+
+export default Hero;
