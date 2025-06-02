@@ -1,7 +1,6 @@
 import Navbar from '../components/Navbar';
 import ProjectCard from '../components/ProjectCard';
 import Head from 'next/head';
-import '../styles/globals.css';
 
 const projects = [
   {
