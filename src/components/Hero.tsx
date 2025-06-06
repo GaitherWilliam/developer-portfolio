@@ -24,7 +24,7 @@ const Hero = () => {
                         Hey, I’m Will 👋
                     </h1>
                     <p className="mt-4 text-lg text-[var(--fg)] opacity-80 max-w-xl">
-                        I build developer tools, infrastructure, and AI-powered systems. I also bake a mean sourdough.
+                        I build developer tools, infrastructure, and AI-powered systems. Outside of work, I bake a mean sourdough, spend time with my wonderful partner Kristen and our two dogs, Roxanne and Daisy, and enjoy story-rich RPGs and thoughtful strategy games.
                     </p>
                     <Link
                         href="/projects"
@@ -42,10 +42,10 @@ const Hero = () => {
                     className="grid grid-cols-2 grid-rows-2 gap-4 w-full max-w-md"
                 >
                     {[
-                        { src: 'https://picsum.photos/seed/headshot/300/300', alt: 'Headshot' },
-                        { src: 'https://picsum.photos/seed/project1/300/300', alt: 'Work' },
-                        { src: 'https://picsum.photos/seed/baking/300/300', alt: 'Baking' },
-                        { src: 'https://picsum.photos/seed/hobby/300/300', alt: 'Hobby' },
+                        { src: '/images/headshot.png', alt: 'Headshot' },
+                        { src: '/images/roxy-daisy.jpg', alt: 'Work' },
+                        { src: '/images/bread.jpeg', alt: 'Baking' },
+                        { src: '/images/hobby.jpg', alt: 'Hobby' },
                     ].map((img) => (
                         <div key={img.alt} className="relative overflow-hidden rounded-xl shadow-md aspect-square">
                             <Image

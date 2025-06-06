@@ -1,23 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #ecfdf5;             /* Softer mint */
-  --fg: #0f172a;             /* Dark slate (stronger contrast) */
-  --primary: #0ea5e9;        /* Sky-500 */
-  --secondary: #059669;      /* Emerald-600 */
-  --muted: #94a3b8;          /* Slate-400 */
-  --highlight: #d1fae5;      /* Emerald-100 */
-  --card-bg: #ffffff; /* light mode card background */
+  --bg: #f8fafc;             /* slate-50: clean background */
+  --fg: #1e293b;             /* slate-800: readable, dark text */
+  --primary: #2563eb;        /* blue-600: vibrant and trustworthy */
+  --secondary: #10b981;      /* emerald-500: friendly contrast */
+  --muted: #94a3b8;          /* slate-400: subtle text/icons */
+  --highlight: #e0f2fe;      /* blue-100: soft highlight */
+  --card-bg: #ffffff;        /* white cards for light mode */
+  --icon-bg: #e2e8f0;        /* slate-200 */
+
 }
 
 [data-theme='dark'] {
-  --bg: #022c22;
-  --fg: #d1fae5;
-  --primary: #38bdf8;
-  --secondary: #6ee7b7;
-  --muted: #cbd5e1; /* ← much lighter now */
-  --highlight: #0d9488;
-  --card-bg: #0f172a; /* Tailwind slate-900 or similar */
+  --bg: #0f172a;             /* slate-900: deep dark */
+  --fg: #f1f5f9;             /* slate-100: clean light text */
+  --primary: #3b82f6;        /* blue-500: bright primary */
+  --secondary: #34d399;      /* emerald-400: soft green */
+  --muted: #64748b;          /* slate-500: balanced for dark mode */
+  --highlight: #67e8f9; /* cyan-300 */
+  --card-bg: #1e293b;        /* slate-800 for cards */
+  --icon-bg: #334155; /* slate-700 */
 }
 
 
@@ -25,4 +28,5 @@ body {
   background-color: var(--bg);
   color: var(--fg);
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-sans);
 }

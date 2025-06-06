@@ -7,12 +7,16 @@ const projects = [
     {
         title: 'Backstage Agent Mesh',
         description:
-            'Designed a plugin for managing AI agents in Backstage, enabling teams to register, visualize, and orchestrate infrastructure-aware developer agents.',
+            'Designed a Backstage plugin for managing AI agents through Git-based infrastructure-as-code. Improved discoverability and accelerated adoption of AI tools by auto-populating agent profiles with metadata.',
+        icon: '/icons/mesh.svg',
+        techStack: ['Backstage', 'TypeScript', 'GitHub Actions'],
     },
     {
-        title: 'Release Notes Generator',
+        title: 'AWIPS NOAA AI Agent',
         description:
-            'Built a GitHub-integrated tool using AWS Lambda and S3 to generate versioned changelogs from commit messages and PR metadata.',
+            'Built a context-aware AI assistant for NOAA’s AWIPS documentation. Contributed across infrastructure, backend, frontend, and AI tooling in collaboration with internal stakeholders.',
+        icon: '/icons/message-chatbot.svg',
+        techStack: ['AWS Lambda', 'LangChain', 'S3', 'React'],
     },
 ];
 
@@ -26,7 +30,7 @@ const FeaturedProjects = () => (
     >
         <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center text-[var(--fg)]">
-                Featured Projects
+                Recent Projects
             </h2>
 
             <div className="grid gap-8 md:grid-cols-2">
@@ -35,6 +39,8 @@ const FeaturedProjects = () => (
                         key={project.title}
                         title={project.title}
                         description={project.description}
+                        icon={project.icon}
+                        techStack={project.techStack}
                     />
                 ))}
             </div>
@@ -42,7 +48,7 @@ const FeaturedProjects = () => (
             <div className="text-center mt-10">
                 <Link
                     href="/projects"
-                    className="inline-block text-[var(--primary)] hover:text-[var(--secondary)] underline-offset-2 hover:underline text-lg font-medium transition-colors"
+                    className="inline-block text-[var(--primary)] hover:text-[var(--highlight)] underline-offset-2 hover:underline text-lg font-medium transition-colors"
                 >
                     View All Projects →
                 </Link>
