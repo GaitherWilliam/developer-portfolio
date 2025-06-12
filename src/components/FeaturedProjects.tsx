@@ -12,9 +12,9 @@ const projects = [
         techStack: ['Backstage', 'TypeScript', 'GitHub Actions'],
     },
     {
-        title: 'AWIPS NOAA AI Agent',
+        title: 'AI Assistant for Government Weather Platform',
         description:
-            'Built a context-aware AI assistant for NOAA’s AWIPS documentation. Contributed across infrastructure, backend, frontend, and AI tooling in collaboration with internal stakeholders.',
+            'Built a context-aware AI assistant to support internal documentation for a federal weather platform. Contributed across infrastructure, backend, frontend, and AI tooling in close collaboration with internal stakeholders.',
         icon: '/icons/message-chatbot.svg',
         techStack: ['AWS Lambda', 'LangChain', 'S3', 'React'],
     },

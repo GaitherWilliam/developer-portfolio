@@ -1,25 +1,32 @@
-import { FaLaptopCode, FaServer, FaRobot } from 'react-icons/fa';
+import { FaLaptopCode, FaServer, FaRobot, FaCogs } from 'react-icons/fa';
 
 const skills = [
-    {
-        title: 'Full-Stack Engineering',
-        icon: <FaLaptopCode className="text-4xl text-[var(--primary)]" />,
-        description:
-            'React, Node.js, and cloud-native architectures that scale and serve real-world users.',
-    },
-    {
-        title: 'DevOps & Infrastructure',
-        icon: <FaServer className="text-4xl text-[var(--primary)]" />,
-        description:
-            'CI/CD pipelines, Docker, Kubernetes, and infrastructure-as-code to support fast iteration.',
-    },
-    {
-        title: 'AI/Agent Systems',
-        icon: <FaRobot className="text-4xl text-[var(--primary)]" />,
-        description:
-            'Designing agent-based systems with RAG pipelines, prompt engineering, and fine-tuned orchestration.',
-    },
+  {
+    title: 'Full-Stack Engineering',
+    icon: <FaLaptopCode className="text-4xl text-[var(--primary)]" />,
+    description:
+      'React, Node.js, and cloud-native architectures that scale and serve real-world users.',
+  },
+  {
+    title: 'DevOps & Infrastructure',
+    icon: <FaServer className="text-4xl text-[var(--primary)]" />,
+    description:
+      'CI/CD pipelines, Docker, Kubernetes, and infrastructure-as-code to support fast iteration.',
+  },
+  {
+    title: 'AI/Agent Systems',
+    icon: <FaRobot className="text-4xl text-[var(--primary)]" />,
+    description:
+      'Designing agent-based systems with RAG pipelines, prompt engineering, and fine-tuned orchestration.',
+  },
+  {
+    title: 'Backstage Developer Portals',
+    icon: <FaCogs className="text-4xl text-[var(--primary)]" />,
+    description:
+      'Building custom Backstage plugins and developer portals to centralize tools, documentation, and workflows.',
+  },
 ];
+
 
 const WhatIDo = () => (
     <section

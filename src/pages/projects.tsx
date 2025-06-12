@@ -21,7 +21,7 @@ const projects = [
     techStack: ['GitHub Copilot Agent', 'TypeScript', 'React', 'Backstage', 'GitHub Actions']
     ,
   },
-    {
+  {
     title: 'Backstage Modernization Initiative',
     description: 'Upgraded core Backstage infrastructure and plugins.',
     longDescription:
@@ -30,13 +30,13 @@ const projects = [
     techStack: ['Backstage', 'Docker', 'GitHub Actions', 'Yarn', 'CI/CD'],
   },
   {
-    title: 'AWIPS NOAA AI Agent',
-    description: 'Developed a context-aware AI assistant for NOAA’s AWIPS documentation.',
+    title: 'AI Assistant for Government Weather System',
+    description: 'Built a context-aware AI assistant for internal documentation used by a federal weather organization.',
     longDescription:
-      `Led the development of a specialized AI assistant for NOAA's AWIPS docuemntation, contributing across infrastructure, backend, frontend, and AI tooling. Collaborated directly with stakeholders to refine functionality, align with operational workflows, and ensure secure, production-ready deployment of a context-aware assistant.`,
+      `Led the development of a specialized AI assistant designed to support internal documentation for a government weather system. Contributed across infrastructure, backend, frontend, and AI tooling. Partnered with stakeholders to refine functionality, align with operational workflows, and deliver a secure, production-ready assistant capable of context-aware interactions.`,
     icon: '/icons/message-chatbot.svg',
-    techStack: ['AWS Lambda', 'S3', 'GitHub Actions', 'React', 'TypeScript', 'Bedrock', 'Vector Store']
-    ,
+    techStack: ['AWS Lambda', 'S3', 'GitHub Actions', 'React', 'TypeScript', 'Bedrock', 'Vector Store'],
+
   },
   {
     title: 'CI/CD Improvements for Internal Tools',
