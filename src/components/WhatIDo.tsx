@@ -1,32 +1,31 @@
 import { FaLaptopCode, FaServer, FaRobot, FaCogs } from 'react-icons/fa';
 
 const skills = [
-  {
-    title: 'Full-Stack Engineering',
-    icon: <FaLaptopCode className="text-4xl text-[var(--primary)]" />,
-    description:
-      'React, Node.js, and cloud-native architectures that scale and serve real-world users.',
-  },
-  {
-    title: 'DevOps & Infrastructure',
-    icon: <FaServer className="text-4xl text-[var(--primary)]" />,
-    description:
-      'CI/CD pipelines, Docker, Kubernetes, and infrastructure-as-code to support fast iteration.',
-  },
-  {
-    title: 'AI/Agent Systems',
-    icon: <FaRobot className="text-4xl text-[var(--primary)]" />,
-    description:
-      'Designing agent-based systems with RAG pipelines, prompt engineering, and fine-tuned orchestration.',
-  },
-  {
-    title: 'Backstage Developer Portals',
-    icon: <FaCogs className="text-4xl text-[var(--primary)]" />,
-    description:
-      'Building custom Backstage plugins and developer portals to centralize tools, documentation, and workflows.',
-  },
+    {
+        title: 'Full-Stack Engineering',
+        icon: <FaLaptopCode className="text-4xl text-[var(--primary)]" />,
+        description:
+            'React, Node.js, and cloud-native architectures that scale and serve real-world users.',
+    },
+    {
+        title: 'DevOps & Infrastructure',
+        icon: <FaServer className="text-4xl text-[var(--primary)]" />,
+        description:
+            'CI/CD pipelines, Docker, Kubernetes, and infrastructure-as-code to support fast iteration.',
+    },
+    {
+        title: 'AI/Agent Systems',
+        icon: <FaRobot className="text-4xl text-[var(--primary)]" />,
+        description:
+            'Designing agent-based systems with RAG pipelines, prompt engineering, and fine-tuned orchestration.',
+    },
+    {
+        title: 'Backstage Developer Portals',
+        icon: <FaCogs className="text-4xl text-[var(--primary)]" />,
+        description:
+            'Building custom Backstage plugins and developer portals to centralize tools, documentation, and workflows.',
+    },
 ];
-
 
 const WhatIDo = () => (
     <section
@@ -39,7 +38,7 @@ const WhatIDo = () => (
         <h2 className="text-3xl font-bold text-center mb-12 text-[var(--fg)]">
             What I Do
         </h2>
-        <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
             {skills.map(({ title, icon, description }) => (
                 <div
                     key={title}
@@ -50,7 +49,6 @@ const WhatIDo = () => (
                     <h3 className="text-xl font-semibold mb-2">{title}</h3>
                     <p className="text-sm opacity-80">{description}</p>
                 </div>
-
             ))}
         </div>
     </section>
