@@ -22,7 +22,7 @@ export default function ResumePage() {
                     Download PDF
                 </a>
                 <iframe
-                    src="/will-gaither-resume.pdf"
+                    src="/william-gaither-external.pdf"
                     className="w-full h-[80vh] border rounded-lg shadow"
                 />
             </main>
